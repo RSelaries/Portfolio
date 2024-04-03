@@ -6,11 +6,10 @@
 
 <p style="font-family: Poppins; font-weight: 200;">Made using react<p/>
 
-### <p style="font-family: Poppins; font-weight: 700; font-size: 2rem">Memo<p/>
+## <p style="font-family: Poppins; font-weight: 700; font-size: 2rem">Memo<p/>
 
-<div style="background-color: #fff; height: 1px; transform: translateY(-25px)">
 
-<div style="background-color: #0000; height: 1px; transform: translateY(25px); font-family: Poppins; font-weight: 200;">
+<div style="background-color: #0000; font-family: Poppins; font-weight: 200;">
 
 ##### `npm start`
 
@@ -19,5 +18,3 @@ Run the developpement app
 ##### `npm run deploy`
 
 Build the app and push it to gh-pages
-
-caca
