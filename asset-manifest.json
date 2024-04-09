@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.2bffbd46.css",
-    "main.js": "/Portfolio/static/js/main.05d1d723.js",
-    "static/media/Ciel.png": "/Portfolio/static/media/Ciel.4cf6ada0735b57eb093d.png",
-    "static/media/Cassandre.png": "/Portfolio/static/media/Cassandre.15730acf30d60bad13c2.png",
-    "static/media/Home copie.png": "/Portfolio/static/media/Home copie.a86487bdee13ed03de02.png",
-    "index.html": "/Portfolio/index.html",
-    "main.2bffbd46.css.map": "/Portfolio/static/css/main.2bffbd46.css.map",
-    "main.05d1d723.js.map": "/Portfolio/static/js/main.05d1d723.js.map"
+    "main.css": "/static/css/main.10f953c8.css",
+    "main.js": "/static/js/main.a884ba05.js",
+    "static/media/Ciel.png": "/static/media/Ciel.4cf6ada0735b57eb093d.png",
+    "static/media/Cassandre.png": "/static/media/Cassandre.15730acf30d60bad13c2.png",
+    "static/media/Home copie.png": "/static/media/Home copie.a86487bdee13ed03de02.png",
+    "index.html": "/index.html",
+    "main.10f953c8.css.map": "/static/css/main.10f953c8.css.map",
+    "main.a884ba05.js.map": "/static/js/main.a884ba05.js.map"
   },
   "entrypoints": [
-    "static/css/main.2bffbd46.css",
-    "static/js/main.05d1d723.js"
+    "static/css/main.10f953c8.css",
+    "static/js/main.a884ba05.js"
   ]
 }
