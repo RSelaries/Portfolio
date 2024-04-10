@@ -1,0 +1,73 @@
+.rien {
+    --background-size-x: 100vw;
+    --background-size-y: 400vw;
+
+}
+
+.home {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    
+    --translate-amount: calc(calc(var(--background-size-y) - 100vh) * -1)
+}
+
+.home .home-background {
+    position: relative;
+    overflow: hidden;
+    width: var(--background-size-x);
+    height: var(--background-size-y);
+    transform: translateY(var(--translate-amount));
+    user-select: none;
+}
+
+.home .home-background > img {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    object-fit: contain;
+}
+
+.home .title {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+
+    h1 {
+        font-weight: 900;
+        font-size: 11vw;
+        line-height: 8.2vw;
+        letter-spacing: -0.55vw;
+        color: #c90707;
+        mix-blend-mode: multiply;
+    }
+
+    h1 span:nth-child(1) { letter-spacing: -0.25vw; }
+    h1 span:nth-child(2) { letter-spacing: -0.65vw; }
+}
+
+.cassandre-falling {
+    animation: cassandre-falling 3s ease-in-out;
+}
+
+.fade-in {
+    animation: fade-in 6s ease-in-out;
+}
+
+@keyframes cassandre-falling {
+    from  { transform: translateY(0) }
+    to    { transform: translateY(--translate-amount) }
+}
+
+@keyframes fade-in {
+    0%    { opacity: 0; }
+    50%   { opacity: 0; }
+    80%   { opacity: 1; }
+    100%  { opacity: 1; }
+}

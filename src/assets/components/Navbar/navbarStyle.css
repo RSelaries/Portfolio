@@ -1,0 +1,38 @@
+.navbar {
+    --padding-x: 2.7rem;
+    --width: calc(100vw - calc(var(--padding-x) * 2));
+
+    width: var(--width);
+    font-family: "Poppins", sans-serif;
+    padding: calc(var(--padding-x) / 2.3) var(--padding-x);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    
+    a {        
+        text-decoration: none;
+        color: #c90707;
+        mix-blend-mode: multiply;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    a:hover {
+        transform: scale(1.1);
+    }
+
+    .home-btn {
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+
+    .page-btns {
+        display: flex;
+        gap: 2rem;
+    }
+}
