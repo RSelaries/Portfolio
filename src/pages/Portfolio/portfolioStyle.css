@@ -1,0 +1,12 @@
+.portfolio {
+    width: 100vw;
+    overflow-x: hidden;
+
+    .portfolio-background {
+        width: 100vw;
+
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -5,7 +5,7 @@ export default function LoadingScreen({ loaded }) {
     const [animation, setAnimation] = useState("")
 
     useEffect(() => {
-        if(loaded) setAnimation("fade-out")
+        if (loaded) setAnimation("fade-out-loading-screen")
     }, [loaded])
 
     return (
@@ -26,7 +26,9 @@ export default function LoadingScreen({ loaded }) {
                 backgroundColor: "#111",
             }}
         >
-            <div>test for 'cassandre' style</div>
+            <svg className="spinner" viewBox="0 0 50 50">
+                <circle className="path" cx="25" cy="25" r="20" fill="none" strokeWidth="5"></circle>
+            </svg>
         </div>
     )
 }

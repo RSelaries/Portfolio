@@ -8,7 +8,6 @@ import LoadingScreen from "./assets/components/LoadingScreen/LoadingScreen"
 import Navbar from "./assets/components/Navbar/Navbar"
 
 // Pages
-import Error404Page from "./assets/components/Error404Page/Error404Page"
 import Home from "./pages/Home/Home"
 import Portfolio from "./pages/Portfolio/Portfolio"
 
@@ -22,42 +21,33 @@ export default function App() {
     }
 
     // Pages
+    const currentPathName = window.location.pathname
     const [showPage, setShowPage] = useState({
-        PageList: ["Home", "Portfolio"],
-        Error404: { isShown: false},
-        Home: { isShown: true, animation: "", },
-        Portfolio: { isShown: false, animation: "", },
+        Home: { id: "Home", isShown: true, animation: "", },
+        Portfolio: { id: "Portfolio", isShown: false, animation: "", },
     })
-    const [currentPage, setCurrentPage] = useState("Home")
+    const [currentPage, setCurrentPage] = useState(showPage.Home)
 
-    // for 404 error page
-    const [for404err, setFor404err] = useState(0)
-
-    // Change Page
-    const changePage = (toPage) => {
-        // For 404 error
-        if (!showPage.PageList.includes(toPage)) {toPage = "Error404"; setFor404err(for404err + 1)}
-
-        setCurrentPage(toPage)
-
-        let showPageCopy = {...showPage,
-            [currentPage]: {...showPage[currentPage], isShown: false },
-            [toPage]: {...showPage[toPage], isShown: true},
+    // Change page
+    function changePage(pageName) {
+        if(currentPage !== pageName) {
+            pageName.isShown = true
         }
         setShowPage(showPageCopy)
+        console.log(showPage)
     }
+    
+    // Change page based on url
+    function handleChangePage() {
+        let showPageCopy = showPage.map((x) => x)
 
-    // Change page based on url at lauch
-    useEffect(() => {
-        const toPage = window.location.pathname.split("/")[1]
-        console.log(toPage)
+        let pageName
+        if(window.location.pathname === "/" ) pageName = showPageCopy.Home
+        else pageName = showPageCopy[currentPathName.split("/")[1]]
 
-        if (toPage !== "") {
-            setTimeout(() => {
-                changePage(toPage)
-            }, 1)
-        }
-    }, [])
+        changePage(pageName)
+    }
+    useEffect(() => { handleChangePage() })
 
     // Check if images are loaded (or cached)
     useEffect(() => {
@@ -86,14 +76,12 @@ export default function App() {
 
     return (
         <>
-            {loadingScreen ? <LoadingScreen loaded={loaded} /> : null}
-            <Navbar handlePageChange={changePage} />
+            {/* {loadingScreen ? <LoadingScreen loaded={loaded} /> : null} */}
+            <Navbar handleChangePage={handleChangePage} />
 
             {/* Pages */}
-            {showPage.Error404.isShown && <Error404Page for404err={for404err} />}
             {showPage.Home.isShown && <Home hasLoaded={hasLoaded} loaded={loaded} />}
-            {showPage.Portfolio.isShown && <Portfolio />}
+            {showPage.Portfolio.isShown && <Portfolio /> }
         </>
     )
 }
-
