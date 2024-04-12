@@ -8,12 +8,15 @@
     font-family: "Poppins", sans-serif;
     height: 100vh;
     overflow: hidden;
+    position: absolute;
+    top: 0;
     
     --translate-amount: calc(calc(var(--background-size-y) - 100vh) * -1)
 }
 
 .home .home-background {
     position: relative;
+    top: 0;
     overflow: hidden;
     width: var(--background-size-x);
     height: var(--background-size-y);
@@ -36,7 +39,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 0px;
+    top: 0px;
     text-align: center;
 
     h1 {

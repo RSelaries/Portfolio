@@ -1,0 +1,18 @@
+html {
+    background-color: grey;
+}
+
+.transition-part { animation: transition-part 2.5s ease-in-out; }
+.transition-arrive { animation: transition-arrive 2.5s ease-in-out; }
+
+@keyframes transition-part {
+    0%   { transform: translateY(0); }
+    80%  { transform: translateY(-100vh); }
+    100% { transform: translateY(-100vh); }
+}
+
+@keyframes transition-arrive {
+    0%   { transform: translateY(calc(100vh - 1px)); }
+    80%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}

@@ -8,7 +8,7 @@ import homeHaut from "../../assets/images/Home.png"
 import cielExtention from "../../assets/images/Ciel.png"
 import cassandre from "./assets/Cassandre.png"
 
-export default function Home({ hasLoaded, loaded }) {
+export default function Home({ hasLoaded, loaded, animation }) {
     const homeStyle = { "--background-size-x": "100vw", "--background-size-y": "600vw", }
     const [classNames, setClassNames] = useState({
         bckgrnd: "",
@@ -37,19 +37,9 @@ export default function Home({ hasLoaded, loaded }) {
         }
     }, [loaded])
 
-    // Check if all images are loaded
-    // useEffect(() => {
-    //     if (imgsLoadState.homeHaut && imgsLoadState.cielExtention && imgsLoadState.cassandre) {
-    //         console.log("Home Page has loaded")
-    //         hasLoaded()
-    //         setTimeout(() => { hasLoaded() }, 3000)
-    //     }
-    // }, [imgsLoadState, hasLoaded])
-
     function Ciel({ bottom }) {
         return (
             <img
-                onLoad={() => { setImgsLoadState({ ...imgsLoadState, cielExtention: true }) }}
                 src={cielExtention} alt=""
                 style={{
                     position: "absolute",
@@ -76,7 +66,7 @@ export default function Home({ hasLoaded, loaded }) {
     }
 
     return (
-        <div className="home" style={homeStyle}>
+        <div className={`home ${animation}`} style={homeStyle}>
             <div className={`home-background ${classNames.bckgrnd}`}>
                 <img alt="" onLoad={() => { setImgsLoadState({ ...imgsLoadState, homeHaut: true }) }} src={homeHaut} />
 
@@ -87,7 +77,6 @@ export default function Home({ hasLoaded, loaded }) {
             <div className="title">
                 <h1 className={classNames.title}>SE<span className="L">L</span>AR<span className="I">I</span>ES</h1>
                 <img
-                    onLoad={() => { setImgsLoadState({ ...imgsLoadState, cassandre: true }) }}
                     src={cassandre}
                     alt="cassandre"
                     style={{

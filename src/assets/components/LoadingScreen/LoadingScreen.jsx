@@ -5,7 +5,8 @@ export default function LoadingScreen({ loaded }) {
     const [animation, setAnimation] = useState("")
 
     useEffect(() => {
-        if (loaded) setAnimation("fade-out-loading-screen")
+        if (loaded) setAnimation("fade-out-loading-screen") 
+        else setAnimation("")
     }, [loaded])
 
     return (

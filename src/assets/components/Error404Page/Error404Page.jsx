@@ -9,6 +9,9 @@ export default function Error404Page({ for404err }) {
     return (
         <div
             style={{
+                backgroundColor: "white",
+                position: "absolute",
+                top: 0,
                 width: "100vw",
                 height: "100vh",
                 display: "flex",
