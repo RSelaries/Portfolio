@@ -48,7 +48,7 @@ export default function App() {
         if (toPage === currentPage) return
         let fromHome = true
         if (currentPage !== "Home") fromHome = false
-        console.log(toPage)
+        // console.log(toPage)
 
         function withTransition () {
             setShowPage({ ...showPage,
@@ -83,7 +83,13 @@ export default function App() {
 
     // Change page based on url at launch
     useEffect(() => {
-        const toPage = window.location.pathname.split("/")[1]
+        // const toPage = window.location.pathname.split("/")[1]
+        let toPage = window.location.hash.split("#")[1]
+        if (toPage === undefined) {
+            toPage = window.location.pathname.split("/")[1]
+        }
+
+        // console.log(toPage)
 
         if (toPage !== "") {
             setTimeout(() => {
@@ -93,12 +99,20 @@ export default function App() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
+    // Change page if url has changed
+    useEffect(() => {
+        // window.addEventListener('popstate', console.log("url changed"))
+    })
+
     // Check if images are loaded (or cached)
     useEffect(() => {
+        // if (currentPage === "Error404") hasLoaded()
+
         function handleImageLoad() {
             const allImagesLoaded = Array.from(document.querySelectorAll('img')).every(img => img.complete)
             if (allImagesLoaded) {
                 hasLoaded()
+                // console.log("loaded")
             }
         }
 
@@ -111,7 +125,7 @@ export default function App() {
             }
         })
 
-        console.log("checked if loaded")
+        // console.log("checked if loaded") 
 
         return () => {
             images.forEach(img => {

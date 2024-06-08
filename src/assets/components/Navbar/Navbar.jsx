@@ -5,6 +5,8 @@ export default function Navbar({ handlePageChange }) {
     function NavbarBtn({ children, to, className }) {
         let toPage = to
         if (toPage === "/") toPage = "Home"
+        else { to = "#" + to }
+
         return (
             <Link
                 className={className}
