@@ -7,6 +7,7 @@
         "jsconfig.json": true,
         ".npmrc": true,
         "node_modules": true,
-        ".svelte-kit": true
+        ".svelte-kit": true,
+        ".github": true,
     }
 }

@@ -7,8 +7,6 @@
 <div class="background filter_nearest"></div>
 
 <IntroDreamscapeVideo />
-Test2
-
 
 <style>
     @import "../lib/global.css";
