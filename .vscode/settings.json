@@ -1,7 +1,7 @@
 {
     "files.exclude": {
         "vite.config.js": true,
-        "svelte.config.js": true,
+        // "svelte.config.js": true,
         "package.json": true,
         "package-lock.json": true,
         "jsconfig.json": true,
