@@ -1,6 +1,4 @@
 <script>
-    import { base } from '$app/paths'
-    
     let { name, subtitle, image, imageAlt, style, sidePadding, rightPadding } = $props()
 </script>
 
