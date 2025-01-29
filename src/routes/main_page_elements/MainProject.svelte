@@ -1,17 +1,20 @@
 <script>
-    let { thumbnail, thumbnailAlt = "", name = "Project Name", subtitle = "Project - Type", description } = $props()
+    let { image, imageAlt = "", projectName = "Project Name", projectType = "Project - Type" } = $props()
 </script>
 
 
 <div class="main-project">
-    <img class="filter-nearest" src={thumbnail} alt={thumbnailAlt}>
+    <img class="filter-nearest" src={image} alt={imageAlt}>
     <div class="project-texts">
         <div class="project-name">
-            <h1>{name}</h1>
-            <h2>{subtitle}</h2>
+            <h1>{projectName}</h1>
+            <h2>{projectType}</h2>
         </div>
-        <div class="description">
-            {@html description}
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
         </div>
     </div>
 </div>
@@ -24,7 +27,6 @@
         display: flex;
         flex-direction: row;
         color: #fff;
-        margin-bottom: 60px;
     }
 
     img {
@@ -33,7 +35,6 @@
 
     .project-texts {
         padding: 40px;
-        padding-top: 20px;
         width: 30%;
     }
 
@@ -44,8 +45,7 @@
 
         h1 {
             font-size: 2rem;
-            font-family: Movement;
-            font-weight: 200;
+            font-family: Darksoul;
 
             margin-bottom: -0.2rem;
         }
@@ -56,9 +56,4 @@
             color: #555;
         }
     }
-
-    .description {
-        white-space: pre-line;
-    }
-
 </style>
