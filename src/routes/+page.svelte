@@ -2,7 +2,7 @@
     import MainPageBackground from "./main_page_elements/MainPageBackground.svelte";
     import MainProject from "./main_page_elements/MainProject.svelte"
 
-    import dreamscapeThumbnail from "$lib/assets/background.png"
+    import dreamscapeThumbnail from "../lib/assets/background.png"
 </script>
 
 
