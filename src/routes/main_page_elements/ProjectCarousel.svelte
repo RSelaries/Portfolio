@@ -29,6 +29,7 @@
 </div>
 <div class="projects-button-wrapper">
     <a href="https://www.youtube.com">Tous les projets</a>
+    <button onclick={() => {alert(base)}}>Test</button>
 </div>
 
 
@@ -36,6 +37,7 @@
     .wrapper {
         position: relative;
         display: flex;
+        margin-top: 50px;
     }
 
     .project-carousel {
@@ -108,6 +110,7 @@
             font-family: Movement;
             font-weight: 500;
             font-size: 20px;
+            margin: 10px;
             padding: 7px 20px;
             border-radius: 50px;
             border: #fff solid 1px;
