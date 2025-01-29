@@ -1,6 +1,7 @@
 <script>
     import SmallProject from "./SmallProject.svelte"
     import { projects } from "$lib/projects.json"
+    import { base } from "$app/paths"
 
     let { sidePadding } = $props()
 
