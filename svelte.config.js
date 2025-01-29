@@ -8,9 +8,6 @@ const config = {
 		}),
 		paths: {
 			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
-		},
-		prerender: {
-			handleHttpError: 'warn' // Pour éviter l'erreur bloquante sur les 404
 		}
 	}
 };
