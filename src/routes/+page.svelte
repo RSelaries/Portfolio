@@ -12,7 +12,7 @@
     <MainProject name={"Dreamscape"} subtitle={"Jeu Vidéo - Godot"} thumbnail={dreamscapeThumbnail}
         thumbnailAlt={"Screenshot from my small video game Dreamscape."}
         description={`Petit jeu vidéo de type <a href="https://fr.wikipedia.org/wiki/Walking_simulator">Walking Simulator</a> où le joueur explore un métro solitaire et se voit transporté dans ses rêves à l'aide d'un dispositif électronique. \n\
-            <b>[à continer...]</b>
+            <b>[à continer]</b>
         `}
     />
     <ProjectCarousel sidePadding={50} />
