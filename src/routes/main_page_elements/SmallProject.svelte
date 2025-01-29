@@ -1,12 +1,14 @@
 <script>
     let { name, subtitle, image, imageAlt, style, sidePadding, rightPadding } = $props()
+
+    import imageDebug from "$lib/assets/background.png"
 </script>
 
 <div class="wrapper" style={style + `--sides-padding: ${sidePadding}px; --projects-right-padding: ${rightPadding}px;`}>
     <div class="small_project">
         <h1>{name}</h1>
         <h2>{subtitle}</h2>
-        <!-- <img src={image} alt={imageAlt}> -->
+        <img src={imageDebug} alt={imageAlt}>
     </div>
 </div>
 

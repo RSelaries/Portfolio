@@ -28,7 +28,7 @@
     </div>
 </div>
 <div class="projects-button-wrapper">
-    <!-- <a href={`${base}/projets`}>Tous les projets</a> -->
+    <a href="https://www.youtube.com">Tous les projets</a>
 </div>
 
 
