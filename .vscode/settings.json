@@ -8,6 +8,6 @@
         ".npmrc": true,
         "node_modules": true,
         ".svelte-kit": true,
-        ".github": true,
+        "CNAME": true,
     }
 }

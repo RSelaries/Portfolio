@@ -3,12 +3,14 @@
     import MainProject from "./main_page_elements/MainProject.svelte"
 
     import dreamscapeThumbnail from "$lib/assets/background.png"
+    import ProjectCarousel from "./main_page_elements/ProjectCarousel.svelte"
 </script>
 
 
 <MainPageBackground />
 <div class="content">
     <MainProject projectName={"Dreamscape"} projectType={"Jeu Vidéo - Godot"} image={dreamscapeThumbnail} imageAlt={"Screenshot from my video game Dreamscape."}/>
+    <ProjectCarousel sidePadding={50} />
 </div>
 
 
