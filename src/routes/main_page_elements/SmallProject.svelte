@@ -6,7 +6,7 @@
     <div class="small_project">
         <h1>{name}</h1>
         <h2>{subtitle}</h2>
-        <img src={image} alt={imageAlt}>
+        <!-- <img src={image} alt={imageAlt}> -->
     </div>
 </div>
 
