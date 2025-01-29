@@ -1,6 +1,4 @@
 <script>
-    import { base } from '$app/paths'
-
     let { name, subtitle, image, imageAlt, style, sidePadding, rightPadding } = $props()
 </script>
 
@@ -8,7 +6,7 @@
     <div class="small_project">
         <h1>{name}</h1>
         <h2>{subtitle}</h2>
-        <img src={base + image} alt={imageAlt}>
+        <img src={image} alt={imageAlt}>
     </div>
 </div>
 
