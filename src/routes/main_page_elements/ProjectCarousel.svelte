@@ -29,7 +29,7 @@
 </div>
 <div class="projects-button-wrapper">
     <a href="https://www.youtube.com">Tous les projets</a>
-    <button onclick={() => {alert(base)}}>Test</button>
+    <!-- <button onclick={() => {alert(base)}}>Test</button> -->
 </div>
 
 
