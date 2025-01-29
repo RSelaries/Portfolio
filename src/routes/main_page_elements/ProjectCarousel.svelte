@@ -27,7 +27,7 @@
     </div>
 </div>
 <div class="projects-button-wrapper">
-    <a href="/projects">Tous les projets</a>
+    <a href="/projets">Tous les projets</a>
 </div>
 
 
