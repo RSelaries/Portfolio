@@ -1,25 +1,26 @@
 <script>
-    import background from "$lib/assets/background.png"
-    import IntroDreamscapeVideo from "./IntroDreamscapeVideo.svelte";
+    import MainPageBackground from "./main_page_elements/MainPageBackground.svelte";
+    import MainProject from "./main_page_elements/MainProject.svelte"
+
+    import dreamscapeThumbnail from "$lib/projects/assets/dreamscape-miniature.png"
 </script>
 
 
-<div class="background filter_nearest"></div>
-
-<IntroDreamscapeVideo />
+<MainPageBackground />
+<div class="content">
+    <MainProject projectName={"Dreamscape"} projectType={"Jeu Vidéo - Godot"} image={dreamscapeThumbnail} imageAlt={"Screenshot from my video game Dreamscape."}/>
+</div>
 
 
 <style>
     @import "../lib/global.css";
 
-    .background {
-        z-index: -1;
-        position: fixed;
-        top: 0;
-        height: 100vh;
-        width: 100vw;
-        background-image: url("../lib/assets/background.png");
-        background-position: center;
-        background-size: cover;
-    }
+    .content {
+        background-color: #111;
+
+        padding: 50px;
+        padding-top: 50px;
+        padding-bottom: 100px;
+   }
+
 </style>
