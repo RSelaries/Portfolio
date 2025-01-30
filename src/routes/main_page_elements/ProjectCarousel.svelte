@@ -28,6 +28,7 @@
         <button class="pan-button right" onclick={() => pan(-1)}>&gt;</button>
     </div>
 </div>
+<br>
 <div class="projects-button-wrapper">
     <StandardButton href={"/projets"}>Tous les projets</StandardButton>
 </div>

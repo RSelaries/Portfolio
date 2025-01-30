@@ -26,19 +26,19 @@
 
     .title {
         font-weight: 800;
-        font-size: 12rem;
-        padding-bottom: 20vh;
+        font-size: 12.5vw;
+        padding-bottom: 10vw;
     }
 
     .subtitle {
-        padding-top: 10vh;
-        font-size: 5rem;
+        padding-top: 4.5vw;
+        font-size: 5vw;
         font-weight: 100;
     }
     
     .sub-subtitle {
-        padding-top: 23vh;
-        font-size: 1.5rem;
+        padding-top: 11vw;
+        font-size: 1.5vw;
         font-weight: 200;
         letter-spacing: 50%;
     }
