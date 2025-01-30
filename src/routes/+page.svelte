@@ -9,11 +9,6 @@
 <MainPageBackground />
 <div class="content">
     <MainProject
-        projectName={"Dreamscape"}
-        projectType={"Jeu Vidéo - Godot"}
-        image={dreamscapeThumbnail}
-        imageAlt={"Screenshot from my video game Dreamscape."}
-        description={`Jeu vidéo type <a href="https://fr.wikipedia.org/wiki/Walking_simulator">walking simulator</a> où le joueur se verra traverser un metro solitaire et explorera ses propres rêves.`}
     />
     <ProjectCarousel sidePadding={50} />
     <div class="a-propos-wrapper">
@@ -32,8 +27,7 @@
                 <br />
                 Je suis un amoureux des jeux vidéos indépendants qui, par leur esthétique
                 ou gameplay, amènent quelque chose en plus au medium. C'est pour
-                cela que j'aimerais moi même pouvoir participer à la création d'un
-                jeu vidéo.
+                cela que j'apprend en ce moment le moteur de jeu Godot en auto-didacte.
             </p>
         </div>
     </div>
@@ -45,9 +39,7 @@
     .content {
         background-color: #111;
 
-        padding: 50px;
-        padding-top: 50px;
-        padding-bottom: 100px;
+        padding: 1px 50px;
     }
 
     .a-propos-wrapper {

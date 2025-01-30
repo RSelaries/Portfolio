@@ -1,52 +1,76 @@
 {
     "projects": [
         {
+            "name": "Dreamscape",
+            "subtitle": "Jeu Vidéo - Godot",
+            "image": "/projects/assets/dreamscape.gif",
+            "main": true,
+            "path": "/",
+            "description": "Jeu vidéo type <a href=\"https://fr.wikipedia.org/wiki/Walking_simulator\">walking simulator</a>où le joueur se verra traverser un metro solitaire et explorera ses propres rêves."
+        },
+        {
             "name": "Documentaire Amnesty",
             "subtitle": "Vidéo - Blender",
             "image": "/projects/assets/amnesty-docu.png",
-            "path": "/"
+            "main": false,
+            "path": "/",
+            "description": ""
         },
         {
             "name": "Photos personnelles",
             "subtitle": "Photo - Argentique / Numérique",
             "image": "/projects/assets/perrine-vent.jpg",
-            "path": "/"
+            "main": false,
+            "path": "/",
+            "description": ""
         },
         {
             "name": "Visualizer",
             "subtitle": "Vidéo - Premiere Pro",
             "image": "/projects/assets/Visualizer1.gif",
-            "path": "/"
+            "main": false,
+            "path": "/",
+            "description": ""
         },
         {
             "name": "Auto-protraits photo",
             "subtitle": "Photo",
             "image": "/projects/assets/auto-portrait-golmon.jpg",
-            "path": "/"
+            "main": false,
+            "path": "/",
+            "description": ""
         },
         {
             "name": "Time Zones",
             "subtitle": "Vidéo - After Effect",
             "image": "/projects/assets/time-zones.gif",
-            "path": "/"
+            "main": false,
+            "path": "/",
+            "description": ""
         },
         {
             "name": "Dénouement",
             "subtitle": "Montages photo",
             "image": "/projects/assets/denouement.png",
-            "path": "/"
+            "main": false,
+            "path": "/",
+            "description": ""
         },
         {
             "name": "Photos Lorine Mercier",
             "subtitle": "Photo - Studio",
             "image": "/projects/assets/photos-lorine.png",
-            "path": "/"
+            "main": false,
+            "path": "/",
+            "description": ""
         },
         {
             "name": "Marée Basse",
-            "subtitle": "Montages Photo",
+            "subtitle": "Dessin - Pastels gras",
             "image": "/projects/assets/maree-basse.png",
-            "path": "/"
+            "main": false,
+            "path": "/",
+            "description": ""
         }
     ]
 }

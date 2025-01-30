@@ -20,7 +20,9 @@
 <div class="wrapper" id="carousel">
     <div class="project-carousel" id="project-carousel" style={`left: ${left}px`}>
         {#each projects as project}
-            <SmallProject name={project.name} subtitle={project.subtitle} image="{base}{project.image}" style="margin-right: 5px;" {sidePadding} rightPadding={5} />
+            {#if !project.main}
+                <SmallProject name={project.name} subtitle={project.subtitle} image="{base}{project.image}" style="margin-right: 5px;" {sidePadding} rightPadding={5} />
+            {/if}
         {/each}
     </div>
     <div class="buttons-wrapper">

@@ -1,25 +1,30 @@
 <script>
     import StandardButton from "./StandardButton.svelte"
+    import { base } from "$app/paths"
+    import { projects } from "$lib/projects.json"
 
     let { image, imageAlt = "", projectName = "Project Name", projectType = "Project - Type", description } = $props()
 </script>
 
-
-<div class="main-project">
-    <img class="filter-nearest" src={image} alt={imageAlt}>
-    <div class="project-texts">
-        <div class="project-name">
-            <h1>{projectName}</h1>
-            <h2>{projectType}</h2>
+{#each projects as project}
+    {#if project.main}
+        <div class="main-project">
+            <img class="filter-nearest" src="{base}{project.image}" alt="">
+            <div class="project-texts">
+                <div class="project-name">
+                    <h1>{project.name}</h1>
+                    <h2>{project.subtitle}</h2>
+                </div>
+                <div>
+                    {@html project.description}
+                </div>
+                <div class="button-wrapper">
+                    <StandardButton style={"margin-top: 30px;"} href={project.path}>Voir le projet</StandardButton>
+                </div>
+            </div>
         </div>
-        <div>
-            {@html description}
-        </div>
-        <div class="button-wrapper">
-            <StandardButton style={"margin-top: 30px;"} href={"/projets"}>Voir le projet</StandardButton>
-        </div>
-    </div>
-</div>
+    {/if}
+{/each}
 
 
 <style>
@@ -29,6 +34,8 @@
         display: flex;
         flex-direction: row;
         color: #fff;
+
+        margin: 50px 0;
     }
 
     img {
