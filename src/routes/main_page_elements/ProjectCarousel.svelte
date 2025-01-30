@@ -25,7 +25,7 @@
 <div class="wrapper" id="carousel">
     <div class="project-carousel" id="project-carousel" style={`left: ${left}px`}>
         {#each projects as project}
-            <SmallProject name={project.name} subtitle={project.subtitle} image={project.image} style="margin-right: 5px;" {sidePadding} rightPadding={5} />
+            <SmallProject name={project.name} subtitle={project.subtitle} image="{base}{project.image}" style="margin-right: 5px;" {sidePadding} rightPadding={5} />
         {/each}
     </div>
     <div class="buttons-wrapper">
