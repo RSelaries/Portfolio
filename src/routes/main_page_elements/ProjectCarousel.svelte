@@ -2,6 +2,7 @@
     import SmallProject from "./SmallProject.svelte"
     import { projects } from "$lib/projects.json"
     import { base } from "$app/paths"
+    import StandardButton from "./StandardButton.svelte"
 
     let { sidePadding } = $props()
 
@@ -28,7 +29,7 @@
     </div>
 </div>
 <div class="projects-button-wrapper">
-    <a href="{base}/projets">Tous les projets</a>
+    <StandardButton href={"/projets"}>Tous les projets</StandardButton>
 </div>
 
 
@@ -104,29 +105,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
-
-        a {
-            font-family: Movement;
-            font-weight: 500;
-            font-size: 20px;
-            margin: 10px;
-            padding: 7px 20px;
-            border-radius: 50px;
-            border: #fff solid 1px;
-            background-color: #0000;
-            color: #fff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            background-color: #555;
-            cursor: pointer;
-        }
-
-        a:focus {
-            color: #111;
-            background-color: #fff;
-        }
+        margin-top: 10px;
     }
 
 </style>

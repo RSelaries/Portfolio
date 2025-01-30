@@ -8,7 +8,7 @@
         {
             "name": "Photos personnelles",
             "subtitle": "Photo - Argentique / Numérique",
-            "image": "/projects/assets/argentique.jpg"
+            "image": "/projects/assets/perrine-vent.jpg"
         },
         {
             "name": "Visualizer",
@@ -22,77 +22,77 @@
         },
         {
             "name": "Dénouement",
-            "subtitle": "Montages Photo - Photoshop / Collages",
+            "subtitle": "Montages photo",
+            "image": "/projects/assets/denouement.png"
+        },
+        {
+            "name": "Projet photo Lorine Mercier",
+            "subtitle": "Photo - Studio",
+            "image": "/projects/assets/photos-lorine.png"
+        },
+        {
+            "name": "Montage photo",
+            "subtitle": "Montage photo",
+            "image": "/projects/assets/portal.png"
+        },
+        {
+            "name": "Marée Basse",
+            "subtitle": "Montages Photo",
+            "image": "/projects/assets/maree-basse.png"
+        },
+        {
+            "name": "Dénouement",
+            "subtitle": "Montages Photo",
             "image": "/projects/assets/denouement.png"
         },
         {
             "name": "Dénouement",
-            "subtitle": "Montages Photo - Photoshop / Collages",
+            "subtitle": "Montages Photo",
             "image": "/projects/assets/denouement.png"
         },
         {
             "name": "Dénouement",
-            "subtitle": "Montages Photo - Photoshop / Collages",
+            "subtitle": "Montages Photo",
             "image": "/projects/assets/denouement.png"
         },
         {
             "name": "Dénouement",
-            "subtitle": "Montages Photo - Photoshop / Collages",
+            "subtitle": "Montages Photo",
             "image": "/projects/assets/denouement.png"
         },
         {
             "name": "Dénouement",
-            "subtitle": "Montages Photo - Photoshop / Collages",
+            "subtitle": "Montages Photo",
             "image": "/projects/assets/denouement.png"
         },
         {
             "name": "Dénouement",
-            "subtitle": "Montages Photo - Photoshop / Collages",
+            "subtitle": "Montages Photo",
             "image": "/projects/assets/denouement.png"
         },
         {
             "name": "Dénouement",
-            "subtitle": "Montages Photo - Photoshop / Collages",
+            "subtitle": "Montages Photo",
             "image": "/projects/assets/denouement.png"
         },
         {
             "name": "Dénouement",
-            "subtitle": "Montages Photo - Photoshop / Collages",
+            "subtitle": "Montages Photo",
             "image": "/projects/assets/denouement.png"
         },
         {
             "name": "Dénouement",
-            "subtitle": "Montages Photo - Photoshop / Collages",
+            "subtitle": "Montages Photo",
             "image": "/projects/assets/denouement.png"
         },
         {
             "name": "Dénouement",
-            "subtitle": "Montages Photo - Photoshop / Collages",
+            "subtitle": "Montages Photo",
             "image": "/projects/assets/denouement.png"
         },
         {
             "name": "Dénouement",
-            "subtitle": "Montages Photo - Photoshop / Collages",
-            "image": "/projects/assets/denouement.png"
-        },
-        {
-            "name": "Dénouement",
-            "subtitle": "Montages Photo - Photoshop / Collages",
-            "image": "/projects/assets/denouement.png"
-        },
-        {
-            "name": "Dénouement",
-            "subtitle": "Montages Photo - Photoshop / Collages",
-            "image": "/projects/assets/denouement.png"
-        },
-        {
-            "name": "Dénouement",
-            "subtitle": "Montages Photo - Photoshop / Collages",
-            "image": "/projects/assets/denouement.png"
-        },
-        {
-            "name": "Dénouement",
-            "subtitle": "Montages Photo - Photoshop / Collages",
+            "subtitle": "Montages Photo",
             "image": "/projects/assets/denouement.png"
         },
         {
@@ -102,7 +102,7 @@
         },
         {
             "name": "Dénouement",
-            "subtitle": "Montages Photo - Photoshop / Collages",
+            "subtitle": "Montages Photo",
             "image": "/projects/assets/denouement.png"
         }
     ]

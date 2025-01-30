@@ -1,4 +1,6 @@
 <script>
+    import StandardButton from "./StandardButton.svelte"
+
     let { image, imageAlt = "", projectName = "Project Name", projectType = "Project - Type" } = $props()
 </script>
 
@@ -15,6 +17,9 @@
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat.
+        </div>
+        <div class="button-wrapper">
+            <StandardButton style={"margin-top: 100px;"} href={"/projets"}>Voir le projet</StandardButton>
         </div>
     </div>
 </div>
@@ -45,7 +50,8 @@
 
         h1 {
             font-size: 2rem;
-            font-family: Darksoul;
+            font-family: Movement;
+            font-weight: 200;
 
             margin-bottom: -0.2rem;
         }
@@ -56,4 +62,9 @@
             color: #555;
         }
     }
+
+    .button-wrapper {
+        margin: 15px 40px;
+    }
+
 </style>
