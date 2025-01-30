@@ -9,7 +9,13 @@
 
 <MainPageBackground />
 <div class="content">
-    <MainProject projectName={"Dreamscape"} projectType={"Jeu Vidéo - Godot"} image={dreamscapeThumbnail} imageAlt={"Screenshot from my video game Dreamscape."}/>
+    <MainProject
+        projectName={"Dreamscape"}
+        projectType={"Jeu Vidéo - Godot"}
+        image={dreamscapeThumbnail}
+        imageAlt={"Screenshot from my video game Dreamscape."}
+        description={`Jeu vidéo type <a href="https://fr.wikipedia.org/wiki/Walking_simulator">walking simulator</a> où le joueur se verra traverser un metro solitaire et explorera ses propres rêves.`}
+    />
     <ProjectCarousel sidePadding={50} />
 </div>
 

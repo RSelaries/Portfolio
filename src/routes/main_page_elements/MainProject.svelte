@@ -1,7 +1,7 @@
 <script>
     import StandardButton from "./StandardButton.svelte"
 
-    let { image, imageAlt = "", projectName = "Project Name", projectType = "Project - Type" } = $props()
+    let { image, imageAlt = "", projectName = "Project Name", projectType = "Project - Type", description } = $props()
 </script>
 
 
@@ -13,13 +13,10 @@
             <h2>{projectType}</h2>
         </div>
         <div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.
+            {@html description}
         </div>
         <div class="button-wrapper">
-            <StandardButton style={"margin-top: 100px;"} href={"/projets"}>Voir le projet</StandardButton>
+            <StandardButton style={"margin-top: 30px;"} href={"/projets"}>Voir le projet</StandardButton>
         </div>
     </div>
 </div>
@@ -36,6 +33,8 @@
 
     img {
         width: 50%;
+        height: calc(50% * calc(9/16));
+        object-fit: cover;
     }
 
     .project-texts {

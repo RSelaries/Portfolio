@@ -1,14 +1,16 @@
 <script>
-    let { name, subtitle, image, imageAlt, style, sidePadding, rightPadding } = $props()
+    import { base } from "$app/paths"
+
+    let { name, subtitle, image, imageAlt, style, sidePadding, rightPadding, pathName } = $props()
 </script>
 
-<div class="wrapper" style={style + `--sides-padding: ${sidePadding}px; --projects-right-padding: ${rightPadding}px;`}>
+<a href="{base}{pathName}" class="wrapper" style={style + `--sides-padding: ${sidePadding}px; --projects-right-padding: ${rightPadding}px;`}>
     <div class="small_project">
         <h1>{name}</h1>
         <h2>{subtitle}</h2>
         <img src={image} alt={imageAlt}>
     </div>
-</div>
+</a>
 
 
 <style>
@@ -19,6 +21,13 @@
         --right-padding-total: calc(var(--right-padding) * 4);
         --width-left: calc(var(--carousel-width) - var(--right-padding-total));
         --small-project-width: calc(var(--width-left) / 4);
+
+        color: white;
+        text-decoration: none;
+    }
+
+    .wrapper:hover {
+        cursor: pointer;
     }
 
     .small_project {

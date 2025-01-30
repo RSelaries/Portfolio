@@ -3,42 +3,50 @@
         {
             "name": "Documentaire Amnesty",
             "subtitle": "Vidéo - Blender",
-            "image": "/projects/assets/amnesty-docu.png"
+            "image": "/projects/assets/amnesty-docu.png",
+            "path": "/"
         },
         {
             "name": "Photos personnelles",
             "subtitle": "Photo - Argentique / Numérique",
-            "image": "/projects/assets/perrine-vent.jpg"
+            "image": "/projects/assets/perrine-vent.jpg",
+            "path": "/"
         },
         {
             "name": "Visualizer",
             "subtitle": "Vidéo - Premiere Pro",
-            "image": "/projects/assets/Visualizer1.gif"
+            "image": "/projects/assets/Visualizer1.gif",
+            "path": "/"
         },
         {
-            "name": "Auto-protrait photo",
+            "name": "Auto-protraits photo",
             "subtitle": "Photo",
-            "image": "/projects/assets/auto-portrait-golmon.jpg"
+            "image": "/projects/assets/auto-portrait-golmon.jpg",
+            "path": "/"
         },
         {
             "name": "Time Zones",
             "subtitle": "Vidéo - After Effect",
-            "image": "/projects/assets/time-zones.gif"
+            "image": "/projects/assets/time-zones.gif",
+            "path": "/"
         },
         {
             "name": "Dénouement",
             "subtitle": "Montages photo",
-            "image": "/projects/assets/denouement.png"
+            "image": "/projects/assets/denouement.png",
+            "path": "/"
         },
         {
             "name": "Photos Lorine Mercier",
             "subtitle": "Photo - Studio",
-            "image": "/projects/assets/photos-lorine.png"
+            "image": "/projects/assets/photos-lorine.png",
+            "path": "/"
         },
         {
             "name": "Marée Basse",
             "subtitle": "Montages Photo",
-            "image": "/projects/assets/maree-basse.png"
+            "image": "/projects/assets/maree-basse.png",
+            "path": "/"
         }
     ]
 }

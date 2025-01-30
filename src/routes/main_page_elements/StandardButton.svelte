@@ -7,8 +7,8 @@
 
 {#if href == ""}
 <button class="button" {onclick} {style}>{@render children?.()}</button>
-{:else}
-<button class="button"><a href="{base}{href}" {style}>{@render children?.()}</a></button>
+{:else} 
+<div {style}><a class="button" href="{base}{href}">{@render children?.()}</a></div>
 {/if}
 
 
