@@ -20,6 +20,7 @@ html * {
 
 body {
     background-color: #111111;
+    overflow-x: hidden;
 }
 
 .filter-nearest {
