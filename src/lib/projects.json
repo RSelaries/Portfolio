@@ -16,6 +16,11 @@
             "image": "/projects/assets/Visualizer1.gif"
         },
         {
+            "name": "Auto-protrait photo",
+            "subtitle": "Photo",
+            "image": "/projects/assets/auto-portrait-golmon.jpg"
+        },
+        {
             "name": "Time Zones",
             "subtitle": "Vidéo - After Effect",
             "image": "/projects/assets/time-zones.gif"
@@ -26,14 +31,9 @@
             "image": "/projects/assets/denouement.png"
         },
         {
-            "name": "Projet photo Lorine Mercier",
+            "name": "Photos Lorine Mercier",
             "subtitle": "Photo - Studio",
             "image": "/projects/assets/photos-lorine.png"
-        },
-        {
-            "name": "Montage photo",
-            "subtitle": "Montage photo",
-            "image": "/projects/assets/portal.png"
         },
         {
             "name": "Marée Basse",
