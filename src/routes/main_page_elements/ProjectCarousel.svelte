@@ -34,8 +34,7 @@
     </div>
 </div>
 <div class="projects-button-wrapper">
-    <a href="https://www.youtube.com">Tous les projets</a>
-    <!-- <button onclick={() => {alert(base)}}>Test</button> -->
+    <a href="{base}/projets">Tous les projets</a>
 </div>
 
 
