@@ -2,14 +2,8 @@
     import SmallProject from "./SmallProject.svelte"
     import { projects } from "$lib/projects.json"
     import { base } from "$app/paths"
-    import { onMount } from "svelte"
 
     let { sidePadding } = $props()
-
-    onMount(() => {
-        let carousel = document.getElementById("carousel");
-        let carouselFullWidth = document.getElementById("project-carousel").scrollWidth;
-    });
 
     let left = $state(0)
     function pan(direction) { // Direction being either 1 (left) or -1 (right)
