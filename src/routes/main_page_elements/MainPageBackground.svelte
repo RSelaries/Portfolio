@@ -1,5 +1,9 @@
+<script>
+    let { blur = 0 } = $props()
+</script>
 
-<div class="main-page-background">
+
+<div class="main-page-background" style="--blur: calc(10px * {blur})">
     <div class="background"></div>
     <p class="title">PORTFOLIO</p>
     <div class="foreground"></div>
@@ -10,13 +14,17 @@
 
 <style>
     .main-page-background {
+        --blur: 0;
+
         font-family: Movement;
 
         pointer-events: none;
         color: #fff;
-    }
 
+    }
+    
     .main-page-background * {
+        filter: blur(var(--blur));
         z-index: -1;
     }
 
