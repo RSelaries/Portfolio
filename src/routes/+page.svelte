@@ -1,18 +1,42 @@
 <script>
+    // External code
+    import { clamp, mapRange } from "$lib/utils"
+    import { onMount } from "svelte"
+
+    // Components
     import MainPageBackground from "./main_page_elements/MainPageBackground.svelte"
     import MainProject from "./main_page_elements/MainProject.svelte"
 
+    // Assets
     import dreamscapeThumbnail from "$lib/assets/background.png"
     import ProjectCarousel from "./main_page_elements/ProjectCarousel.svelte"
+    import Header from "./projets/header.svelte"
+
+    let scroll = $state(0)
+    let height = $state()
+    let blur = $state(0)
+    
+    $effect(() => {
+        let scrollPercent = scroll / height
+        let remapedScrollPercent = mapRange(scrollPercent, 0.3, 1, 0, 1)
+        let clampedRemapedScrollPercent = clamp(remapedScrollPercent, 0, 1)
+
+        blur = clampedRemapedScrollPercent
+    })
 </script>
 
-<MainPageBackground />
+
+<svelte:window bind:scrollY={scroll} bind:innerHeight={height} />
+
+<Header opacity={blur}/>
+
+<MainPageBackground blur={blur} />
 <div class="content">
     <MainProject
     />
     <ProjectCarousel sidePadding={50} />
     <div class="a-propos-wrapper">
-        <div class="a-propos">
+        <div class="a-propos" id="a-propos">
             <h1>À propos</h1>
             <br />
             <p>
