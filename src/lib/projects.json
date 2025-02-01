@@ -5,7 +5,7 @@
             "subtitle": "Jeu Vidéo - Godot",
             "image": "/projects/assets/dreamscape.gif",
             "main": true,
-            "path": "/",
+            "path": "/projets/dreamscape",
             "description": "Jeu vidéo type <a href=\"https://fr.wikipedia.org/wiki/Walking_simulator\">walking simulator</a>où le joueur se verra traverser un metro solitaire et explorera ses propres rêves."
         },
         {
@@ -13,7 +13,7 @@
             "subtitle": "Vidéo - Blender",
             "image": "/projects/assets/amnesty-docu.png",
             "main": false,
-            "path": "/",
+            "path": "/projets/docu-wydryznska",
             "description": ""
         },
         {
@@ -21,7 +21,7 @@
             "subtitle": "Photo - Argentique / Numérique",
             "image": "/projects/assets/perrine-vent.jpg",
             "main": false,
-            "path": "/",
+            "path": "/projets/photos-personnelles",
             "description": ""
         },
         {
@@ -29,7 +29,7 @@
             "subtitle": "Vidéo - Premiere Pro",
             "image": "/projects/assets/Visualizer1.gif",
             "main": false,
-            "path": "/",
+            "path": "/projets/visualizer",
             "description": ""
         },
         {
@@ -37,7 +37,7 @@
             "subtitle": "Photo",
             "image": "/projects/assets/auto-portrait-golmon.jpg",
             "main": false,
-            "path": "/",
+            "path": "/projets/auto-portraits",
             "description": ""
         },
         {
@@ -45,7 +45,7 @@
             "subtitle": "Vidéo - After Effect",
             "image": "/projects/assets/time-zones.gif",
             "main": false,
-            "path": "/",
+            "path": "/projets/time-zones",
             "description": ""
         },
         {
@@ -53,7 +53,7 @@
             "subtitle": "Montages photo",
             "image": "/projects/assets/denouement.png",
             "main": false,
-            "path": "/",
+            "path": "/projets/avant-le-denouement",
             "description": ""
         },
         {
@@ -61,7 +61,7 @@
             "subtitle": "Photo - Studio",
             "image": "/projects/assets/photos-lorine.png",
             "main": false,
-            "path": "/",
+            "path": "/projets/photos-lorine",
             "description": ""
         },
         {
@@ -69,7 +69,7 @@
             "subtitle": "Dessin - Pastels gras",
             "image": "/projects/assets/maree-basse.png",
             "main": false,
-            "path": "/",
+            "path": "/projets/maree-basse",
             "description": ""
         }
     ]
