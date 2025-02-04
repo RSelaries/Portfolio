@@ -1,7 +1,7 @@
 <script>
     import P5 from "p5-svelte"
     import Header from "../../header.svelte"
-    import Parameters from "./parameters.svelte"
+    import Parameters from "./Parameters.svelte"
 
     let characterSize = $state(16)
     export function setCharacterSize(value) {
