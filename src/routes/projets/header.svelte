@@ -4,19 +4,22 @@
 <script>
     import { base } from "$app/paths"
 
-    let { opacity = 1 } = $props()
+    let { opacity = 1, style } = $props()
 </script>
 
 
-<header style="opacity: {opacity};">
-    <div class="buttons">
-        <a href="{base}/">Home</a>
-        <a href="{base}/projets">Projets</a>
-        <div style="width: 100%;" id="button-spacer"></div>
-        <a href="{base}/#a-propos">À propos</a>
-    </div>
-    <div class="line"></div>
-</header>
+<div class="header-wrapper" style="opacity: {opacity};">
+    <header {style}>
+        <div class="buttons">
+            <a href="{base}/">Home</a>
+            <a href="{base}/projets">Projets</a>
+            <div style="width: 100%;" id="button-spacer"></div>
+            <a href="{base}/#a-propos">À propos</a>
+        </div>
+        <div class="line"></div>
+    </header>
+</div>
+
 
 
 <style>
