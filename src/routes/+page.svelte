@@ -32,8 +32,7 @@
 
 <MainPageBackground blur={blur} />
 <div class="content">
-    <MainProject
-    />
+    <MainProject />
     <ProjectCarousel sidePadding={50} />
     <div class="a-propos-wrapper">
         <div class="a-propos" id="a-propos">
