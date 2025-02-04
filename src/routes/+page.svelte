@@ -15,6 +15,11 @@
     let scroll = $state(0)
     let height = $state()
     let blur = $state(0)
+
+    let isGif = $state(false)
+    function toggleIsGif() {
+        isGif = !isGif
+    }
     
     $effect(() => {
         let scrollPercent = scroll / height
@@ -28,12 +33,12 @@
 
 <svelte:window bind:scrollY={scroll} bind:innerHeight={height} />
 
-<Header opacity={blur}/>
+<Header opacity={blur} {isGif} {toggleIsGif}/>
 
 <MainPageBackground blur={blur} />
 <div class="content">
-    <MainProject />
-    <ProjectCarousel sidePadding={50} />
+    <MainProject {isGif} />
+    <ProjectCarousel sidePadding={50} {isGif} />
     <div class="a-propos-wrapper">
         <div class="a-propos" id="a-propos">
             <h1>À propos</h1>

@@ -4,7 +4,7 @@
     import { base } from "$app/paths"
     import StandardButton from "./StandardButton.svelte"
 
-    let { sidePadding } = $props()
+    let { sidePadding, isGif } = $props()
 
     let left = $state(0)
     function pan(direction) { // Direction being either 1 (left) or -1 (right)
@@ -21,7 +21,7 @@
     <div class="project-carousel" id="project-carousel" style={`left: ${left}px`}>
         {#each projects as project}
             {#if !project.main}
-                <SmallProject pathName={project.path} name={project.name} subtitle={project.subtitle} image="{base}{project.image}" style="margin-right: 5px;" {sidePadding} rightPadding={5} />
+                <SmallProject pathName={project.path} name={project.name} subtitle={project.subtitle} image="{base}{isGif ? project.gif : project.image}" style="margin-right: 5px;" {sidePadding} rightPadding={5} />
             {/if}
         {/each}
     </div>

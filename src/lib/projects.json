@@ -3,7 +3,8 @@
         {
             "name": "Dreamscape",
             "subtitle": "Jeu Vidéo - Godot",
-            "image": "/projects/assets/dreamscape.gif",
+            "image": "/projects/assets/dreamscape.png",
+            "gif": "/projects/assets/dreamscape.gif",
             "main": true,
             "path": "/projets/dreamscape",
             "description": "Jeu vidéo type <a href=\"https://fr.wikipedia.org/wiki/Walking_simulator\">walking simulator</a>où le joueur se verra traverser un metro solitaire et explorera ses propres rêves."
@@ -12,14 +13,25 @@
             "name": "Documentaire Amnesty",
             "subtitle": "Vidéo - Blender",
             "image": "/projects/assets/amnesty-docu.png",
+            "gif": "/projects/assets/amnesty-docu-light.gif",
             "main": false,
             "path": "/projets/docu-wydryznska",
+            "description": ""
+        },
+        {
+            "name": "Tests visuels",
+            "subtitle": "Web - p5js",
+            "image": "/projects/assets/ascii-art.png",
+            "gif": "/projects/assets/ascii-art.gif",
+            "main": false,
+            "path": "/projets/tests-visuels/ascii-art",
             "description": ""
         },
         {
             "name": "Photos personnelles",
             "subtitle": "Photo - Argentique / Numérique",
             "image": "/projects/assets/perrine-vent.jpg",
+            "gif": "/projects/assets/photos-persos-fade.gif",
             "main": false,
             "path": "/projets/photos-personnelles",
             "description": ""
@@ -28,6 +40,7 @@
             "name": "Visualizer",
             "subtitle": "Vidéo - Premiere Pro",
             "image": "/projects/assets/Visualizer1.gif",
+            "gif": "/projects/assets/visualizer-lossy.gif",
             "main": false,
             "path": "/projets/visualizer",
             "description": ""
@@ -36,6 +49,7 @@
             "name": "Auto-protraits photo",
             "subtitle": "Photo",
             "image": "/projects/assets/auto-portrait-golmon.jpg",
+            "gif": "/projects/assets/auto-portraits.gif",
             "main": false,
             "path": "/projets/auto-portraits",
             "description": ""
@@ -44,6 +58,7 @@
             "name": "Time Zones",
             "subtitle": "Vidéo - After Effect",
             "image": "/projects/assets/time-zones.gif",
+            "gif": "",
             "main": false,
             "path": "/projets/time-zones",
             "description": ""
@@ -52,6 +67,7 @@
             "name": "Dénouement",
             "subtitle": "Montages photo",
             "image": "/projects/assets/denouement.png",
+            "gif": "",
             "main": false,
             "path": "/projets/avant-le-denouement",
             "description": ""
@@ -60,6 +76,7 @@
             "name": "Photos Lorine Mercier",
             "subtitle": "Photo - Studio",
             "image": "/projects/assets/photos-lorine.png",
+            "gif": "",
             "main": false,
             "path": "/projets/photos-lorine",
             "description": ""
@@ -68,6 +85,7 @@
             "name": "Marée Basse",
             "subtitle": "Dessin - Pastels gras",
             "image": "/projects/assets/maree-basse.png",
+            "gif": "",
             "main": false,
             "path": "/projets/maree-basse",
             "description": ""

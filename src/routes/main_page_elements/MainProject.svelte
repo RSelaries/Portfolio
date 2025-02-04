@@ -3,13 +3,17 @@
     import { base } from "$app/paths"
     import { projects } from "$lib/projects.json"
 
-    let { image, imageAlt = "", projectName = "Project Name", projectType = "Project - Type", description } = $props()
+    let { image, imageAlt = "", projectName = "Project Name", projectType = "Project - Type", description, isGif } = $props()
 </script>
 
 {#each projects as project}
     {#if project.main}
         <div class="main-project">
+            {#if isGif}
+            <img class="filter-nearest" src="{base}{project.gif}" alt="">
+            {:else}
             <img class="filter-nearest" src="{base}{project.image}" alt="">
+            {/if}
             <div class="project-texts">
                 <div class="project-name">
                     <h1>{project.name}</h1>
