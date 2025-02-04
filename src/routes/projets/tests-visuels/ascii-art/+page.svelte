@@ -3,15 +3,26 @@
     import Header from "../../header.svelte"
     import Parameters from "./Parameters.svelte"
 
+    
     let characterSize = $state(16)
-    export function setCharacterSize(value) {
+    function setCharacterSize(value) {
         showP5 = false
         characterSize = value
-
         setTimeout(() => {
             showP5 = true
-        }, 2)
+        }, 1);
     }
+
+    let textColor = $state("#f00")
+    function setTextColor(value) {
+        textColor = value
+    }
+
+    let backgroundColor = $state("#000")
+    function setBackgroundColor(value) {
+        backgroundColor = value
+    }
+
 
     let showP5 = $state(true)
 
@@ -21,6 +32,7 @@
 
         // const density = `▓░@$#k/)1]+~:,-"'.`
         const density = `.'"-,:~+]1)/k#$@░▓`
+        // let density = `.,:-~+1/#@░▓`
 
         p5.setup = () => {
             asciiDiv = p5.createDiv("")
@@ -75,9 +87,9 @@
     <Header style="background-color: #000b;" />
 </div>
 
-<Parameters setCharacterSize={setCharacterSize} characterSize={characterSize} />
+<Parameters setBackgroundColor={setBackgroundColor} setTextColor={setTextColor} setCharacterSize={setCharacterSize}/>
 
-<div class="ascii-art" style="--charcterSize: {characterSize};">
+<div class="ascii-art" style="--charcterSize: {characterSize}; --background-color: {backgroundColor}; --text-color: {textColor};">
     {#if showP5}
         <P5 {sketch}/>
     {/if}
@@ -90,11 +102,11 @@
     .ascii-art {
         --charcterSize: 6;
 
-        background-color: #000;
+        background-color: var(--background-color);
         margin: 0;
         padding: 0;
         font-family: 'Courier New', Courier, monospace;
-        color: #f00;
+        color: var(--text-color);
         font-size: calc(var(--charcterSize) * 1.1px);
         line-height: calc(var(--charcterSize) * 1px);
 
