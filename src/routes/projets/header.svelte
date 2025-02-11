@@ -8,21 +8,23 @@
 </script>
 
 
-<div class="header-wrapper" style="opacity: {opacity};">
+<div class="header-wrapper" style="opacity: {opacity};" data-sveltekit-reload>
     <header {style}>
         <div class="buttons">
             <a href="{base}/">Home</a>
             <a href="{base}/projets">Projets</a>
 
             <!-- Gif / Image -->
-            <div style="width: 100%;" id="button-spacer"></div>
-            <button onclick={() => toggleIsGif()}>
-                {#if !isGif}
-                Images
-                {:else}                  
-                Gifs
-                {/if}
-            </button>
+             {#if toggleIsGif}
+             <div style="width: 100%;" id="button-spacer"></div>
+             <button onclick={() => toggleIsGif()}>
+                 {#if !isGif}
+                 Images
+                 {:else}                  
+                 Gifs
+                 {/if}
+             </button>
+             {/if}
             <!-- Gif / Image -->
 
             <div style="width: 100%;" id="button-spacer"></div>
@@ -41,6 +43,8 @@
         top: 0;
         position: fixed;
         width: 100vw;
+
+        z-index: 5;
     }
 
     .buttons {

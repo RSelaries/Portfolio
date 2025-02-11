@@ -13,6 +13,14 @@
     src: url(./fonts/Darksoul.otf);
 }
 
+@font-face {
+    font-family: Justyna;
+    src: url(./fonts/amnesty-font-v2.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
 html * {
     margin: 0;
     padding: 0;

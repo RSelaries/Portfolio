@@ -10,9 +10,13 @@
     {#if project.main}
         <div class="main-project">
             {#if isGif}
-            <img class="filter-nearest" src="{base}{project.gif}" alt="">
+            <a class="img-button" href="{base}{project.path}">
+                <img class="filter-nearest" src="{base}{project.gif}" alt="">
+            </a>
             {:else}
-            <img class="filter-nearest" src="{base}{project.image}" alt="">
+            <a class="img-button" href="{base}{project.path}">
+                <img class="filter-nearest" src="{base}{project.image}" alt="">
+            </a>
             {/if}
             <div class="project-texts">
                 <div class="project-name">
@@ -42,9 +46,14 @@
         margin: 50px 0;
     }
 
-    img {
+    .img-button {
         width: 50%;
         height: calc(50% * calc(9/16));
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 

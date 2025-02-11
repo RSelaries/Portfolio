@@ -1,12 +1,23 @@
 <script>
-    import documentaire from "$lib/projects/docu-wydrzysnka/Louise Raphael - Amnesty final.mp4"
-    import Header from "../header.svelte";
+    import ProjectCarousel from "../../main_page_elements/ProjectCarousel.svelte"
+    import Header from "../header.svelte"
+
+    // Assets
+    import image1 from "$lib/projects/docu-wydrzysnka/amnesty_img_1.png"
+    import image2 from "$lib/projects/docu-wydrzysnka/PDF Amnesty International 2.jpg"
+    import image3 from "$lib/projects/docu-wydrzysnka/amnesty_img_3.png"
+    import image5 from "$lib/projects/docu-wydrzysnka/amnesty_img_5.png"
+
+    import storyboard1 from "$lib/projects/docu-wydrzysnka/story_board_1.jpg"
+    import storyboard2 from "$lib/projects/docu-wydrzysnka/story_board_2.jpg"
+    import storyboard3 from "$lib/projects/docu-wydrzysnka/story_board_3.jpg"
+    import storyboard4 from "$lib/projects/docu-wydrzysnka/story_board_4.jpg"
 </script>
 
 
 <Header />
 
-<section class="main">
+<main>
     <h1>Documentaire amnesty - Justyna Wydrzynska</h1>
     <div class="media-description-wrapper">
         <div class="media-wrapper">
@@ -20,26 +31,51 @@
             ></iframe>
         </div>
         <div class="description-wrapper">
-            <h2>Un truc ici</h2>
+            <!-- <h3>Un truc ici</h3> -->
+            <br>
             <p class="project-description">
+                Une animation 3D qui raconte l'histoire du combat de Justyna Wydrzynska contre la justice Polonaise,
+                pour le droit à l'avortement.<br>
                 <br>
-                Gros caca text du caca des fesses Gros caca text du caca des fesses Gros caca text du caca des fesses Gros caca text du caca des fesses Gros caca text du caca des fesses Gros caca text du caca des fesses Gros caca text du caca des fesses Gros caca text du caca des fesses Gros caca text du caca des fesses Gros caca text du caca des fesses Gros caca text du caca des fesses 
+                Il sagit d'un projet en binôme, visant à représenter une histoire recueillie par amnesty international,
+                dans un medium numérique autour d'1m30s.<br>
+                <br>
+                <span style="font-family: Justyna; letter-spacing: -30%; color: yellow;">cette fonte à également été créée pour le projet.</span>
             </p>
         </div>
     </div>
-</section>
+
+    <h2>Recherches visuelles</h2>
+    <div class="images-grid two">
+        <img src={image1} alt="">
+        <img src={image3} alt="">
+        <img src={image5} alt="">
+        <img src={image2} alt="">
+    </div>
+    
+    <h2>Storyboard</h2>
+    <div class="images-grid four">
+        <img src={storyboard1} alt="">
+        <img src={storyboard2} alt="">
+        <img src={storyboard3} alt="">
+        <img src={storyboard4} alt="">
+    </div>
+
+    <h2>Autres projets</h2>
+    <ProjectCarousel sidePadding={50} isHomePage={false} isGif={true} currentPage="Documentaire Amnesty" />
+</main>
 
 
 <style>
     @import "../../../lib/global.css";
 
-    .main {
+    main {
         font-family: Lexend;
         color: white;
         
         font-weight: 200;
         padding: 20px 50px;
-        margin-top: 50px;
+        margin: 50px 0;
     }
 
     .media-description-wrapper {
@@ -51,7 +87,7 @@
     .description-wrapper {
         padding: 0px 50px;
 
-        h2 {
+        h3 {
             font-family: Movement;
             font-size: 1.7rem;
             font-weight: 900;
@@ -62,6 +98,21 @@
             text-transform: uppercase;
         }
     }
+
+    .images-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        gap: 1rem;
+        margin: 50px 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .images-grid.two { grid-template-columns: repeat(2, 1fr); }
+    .images-grid.four { grid-template-columns: repeat(4, 1fr); }
 
     iframe {
         width: 60vw;
@@ -75,5 +126,13 @@
         font-family: Movement;
 
         margin-bottom: 30px;
+    }
+
+    h2 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        font-family: Movement;
     }
 </style>
