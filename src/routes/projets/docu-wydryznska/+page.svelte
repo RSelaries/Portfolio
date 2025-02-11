@@ -86,17 +86,6 @@
 
     .description-wrapper {
         padding: 0px 50px;
-
-        h3 {
-            font-family: Movement;
-            font-size: 1.7rem;
-            font-weight: 900;
-
-            color: #0000;
-            -webkit-text-stroke: 1px yellow;
-
-            text-transform: uppercase;
-        }
     }
 
     .images-grid {

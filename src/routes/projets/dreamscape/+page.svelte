@@ -3,8 +3,6 @@
     import Header from "../header.svelte"
 
     // Assets
-    import video from "$lib/projects/dreamscape/screen_record_dreamscape.mp4"
-
     import image1 from "$lib/projects/docu-wydrzysnka/amnesty_img_1.png"
     import image2 from "$lib/projects/docu-wydrzysnka/PDF Amnesty International 2.jpg"
     import image3 from "$lib/projects/docu-wydrzysnka/amnesty_img_3.png"
@@ -18,8 +16,14 @@
     <h1>Dreamscape</h1>
     <div class="media-description-wrapper">
         <div class="media-wrapper">
-            <!-- svelte-ignore a11y_media_has_caption -->
-            <video src={video} controls></video>
+            <iframe
+                src="https://www.youtube.com/embed/B5elVAPeR2o?si=0aVJXAJ6VLCgDvBR"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+            ></iframe>
         </div>
         <div class="description-wrapper">
             <!-- <h3>Un truc ici</h3> -->
@@ -64,17 +68,6 @@
 
     .description-wrapper {
         padding: 0px 50px;
-
-        h3 {
-            font-family: Movement;
-            font-size: 1.7rem;
-            font-weight: 900;
-
-            color: #0000;
-            -webkit-text-stroke: 1px yellow;
-
-            text-transform: uppercase;
-        }
     }
 
     .images-grid {
@@ -91,7 +84,7 @@
 
     .images-grid.two { grid-template-columns: repeat(2, 1fr); }
 
-    video {
+    iframe {
         width: 60vw;
         aspect-ratio: 16/9;
     }
