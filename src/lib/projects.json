@@ -3,8 +3,7 @@
         {
             "name": "Dreamscape",
             "subtitle": "Jeu Vidéo - Godot",
-            "image": "/projects/assets/dreamscape.png",
-            "gif": "/projects/assets/dreamscape.gif",
+            "image": "/projects/assets/dreamscape.gif",
             "main": true,
             "path": "/projets/dreamscape",
             "description": "Jeu vidéo type <a href=\"https://fr.wikipedia.org/wiki/Walking_simulator\">walking simulator</a> où le joueur se verra traverser un metro solitaire et explorera ses propres rêves."
@@ -16,7 +15,7 @@
             "gif": "/projects/assets/amnesty-docu-light.gif",
             "main": false,
             "path": "/projets/docu-wydryznska",
-            "description": ""
+            "description": "Une animation 3D qui raconte l'histoire du combat de Justyna Wydrzynska contre la justice Polonaise, pour le droit à l'avortement."
         },
         {
             "name": "Tests visuels",
@@ -28,22 +27,13 @@
             "description": ""
         },
         {
-            "name": "Photos personnelles",
-            "subtitle": "Photo - Argentique / Numérique",
-            "image": "/projects/assets/perrine-vent.jpg",
-            "gif": "/projects/assets/photos-persos-fade.gif",
-            "main": false,
-            "path": "/projets/photos-personnelles",
-            "description": ""
-        },
-        {
             "name": "Visualizer",
             "subtitle": "Vidéo - Premiere Pro",
             "image": "/projects/assets/Visualizer1.gif",
             "gif": "/projects/assets/visualizer-lossy.gif",
             "main": false,
             "path": "/projets/visualizer",
-            "description": ""
+            "description": "Visualizer (court vidéo clip qui boucle, designé pour les applications de musique comme Spotify ou Deezer) de la musique <i style=\"color: violet;\">Let it Happen</i> de l'album <i style=\"color: violet;\">Currents</i> de <i style=\"color: violet;\">Tame Impala</i>."
         },
         {
             "name": "Auto-protraits photo",

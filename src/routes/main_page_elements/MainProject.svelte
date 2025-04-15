@@ -9,15 +9,9 @@
 {#each projects as project}
     {#if project.main}
         <div class="main-project">
-            {#if isGif}
-            <a class="img-button" href="{base}{project.path}">
-                <img class="filter-nearest" src="{base}{project.gif}" alt="">
-            </a>
-            {:else}
             <a class="img-button" href="{base}{project.path}">
                 <img class="filter-nearest" src="{base}{project.image}" alt="">
             </a>
-            {/if}
             <div class="project-texts">
                 <div class="project-name">
                     <h1>{project.name}</h1>

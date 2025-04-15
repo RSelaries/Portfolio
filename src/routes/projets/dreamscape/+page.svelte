@@ -1,12 +1,14 @@
 <script>
     import ProjectCarousel from "../../main_page_elements/ProjectCarousel.svelte"
-    import Header from "../header.svelte"
+    import Header from "../../main_page_elements/header.svelte"
 
     // Assets
-    import image1 from "$lib/projects/docu-wydrzysnka/amnesty_img_1.png"
-    import image2 from "$lib/projects/docu-wydrzysnka/PDF Amnesty International 2.jpg"
-    import image3 from "$lib/projects/docu-wydrzysnka/amnesty_img_3.png"
-    import image5 from "$lib/projects/docu-wydrzysnka/amnesty_img_5.png"
+    import image1 from "$lib/projects/dreamscape/test1.png"
+    import image2 from "$lib/projects/dreamscape/test2.png"
+    import image3 from "$lib/projects/dreamscape/test3.png"
+    import image4 from "$lib/projects/dreamscape/blender1.png"
+    import image5 from "$lib/projects/dreamscape/blender2.png"
+    import image6 from "$lib/projects/dreamscape/blender3.png"
 </script>
 
 
@@ -17,13 +19,13 @@
     <div class="media-description-wrapper">
         <div class="media-wrapper">
             <iframe
-                src="https://www.youtube.com/embed/B5elVAPeR2o?si=0aVJXAJ6VLCgDvBR"
+                src="https://www.youtube.com/embed/_s7pABIYAhY?si=FSxpns3DTIKotSQj"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-            ></iframe>
+                allowfullscreen>
+            </iframe>
         </div>
         <div class="description-wrapper">
             <!-- <h3>Un truc ici</h3> -->
@@ -36,11 +38,17 @@
     </div>
 
     <h2>Recherches visuelles</h2>
-    <div class="images-grid two">
+    <div class="images-grid three">
         <img src={image1} alt="">
-        <img src={image3} alt="">
-        <img src={image5} alt="">
         <img src={image2} alt="">
+        <img src={image3} alt="">
+    </div>
+
+    <h2>Modelisation 3D</h2>
+    <div class="images-grid three">
+        <img src={image4} alt="">
+        <img src={image5} alt="">
+        <img src={image6} alt="">
     </div>
 
     <h2>Autres projets</h2>
@@ -82,7 +90,7 @@
         }
     }
 
-    .images-grid.two { grid-template-columns: repeat(2, 1fr); }
+    .images-grid.three { grid-template-columns: repeat(3, 1fr); }
 
     iframe {
         width: 60vw;

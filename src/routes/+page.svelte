@@ -10,16 +10,11 @@
     // Assets
     import dreamscapeThumbnail from "$lib/assets/background.png"
     import ProjectCarousel from "./main_page_elements/ProjectCarousel.svelte"
-    import Header from "./projets/header.svelte"
+    import Header from "./main_page_elements/header.svelte"
 
     let scroll = $state(0)
     let height = $state()
     let blur = $state(0)
-
-    let isGif = $state(false)
-    function toggleIsGif() {
-        isGif = !isGif
-    }
     
     $effect(() => {
         let scrollPercent = scroll / height
@@ -33,12 +28,12 @@
 
 <svelte:window bind:scrollY={scroll} bind:innerHeight={height} />
 
-<Header opacity={blur} {isGif} {toggleIsGif}/>
+<Header opacity={blur}/>
 
 <MainPageBackground blur={blur} />
 <div class="content">
-    <MainProject {isGif} />
-    <ProjectCarousel sidePadding={50} {isGif} />
+    <MainProject />
+    <ProjectCarousel sidePadding={50} />
     <div class="a-propos-wrapper">
         <div class="a-propos" id="a-propos">
             <h1>À propos</h1>
@@ -49,8 +44,11 @@
                 l’école ENSAAMA - Olivier de Serres. <br />
                 <br />
                 Dans ma formation j’ai pu toucher au motion design, la modélisation
-                3D, de la photographie et vidéo. J’ai également eu un formation sur
-                les arts plastiques, majoritairement du dessin mais aussi du modelage.
+                3D, de la photographie, vidéo ainsi que la programmation (ce site web
+                atant par ailleurs codé par moi-même avec la librairie svelte).
+                <br />
+                J’ai également eu un formation sur les arts plastiques, majoritairement
+                du dessin mais aussi du modelage.
                 <br />
                 <br />
                 Je suis un amoureux des jeux vidéos indépendants qui, par leur esthétique

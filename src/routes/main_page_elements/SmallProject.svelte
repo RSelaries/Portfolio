@@ -1,26 +1,31 @@
 <script>
     import { base } from "$app/paths"
 
-    let { name, subtitle, image, imageAlt, style, sidePadding, rightPadding, pathName } = $props()
+    let { name, subtitle, image, imageAlt, style, sidePadding, rightPadding, pathName, nbrOfProjetcs = 4, description = [false, ""] } = $props()
 </script>
 
-<a href="{base}{pathName}" class="wrapper" style={style + `--sides-padding: ${sidePadding}px; --projects-right-padding: ${rightPadding}px;`}>
+<a href="{base}{pathName}" class="wrapper" style={style + `--sides-padding: ${sidePadding}px; --projects-right-padding: ${rightPadding}px; --nbr-of-small-projects: ${nbrOfProjetcs};`}>
     <div class="small_project">
         <h1>{name}</h1>
         <h2>{subtitle}</h2>
         <img src={image} alt={imageAlt}>
+
+        {#if description[0] = true && description[1] != ""}
+        <div style="margin: 15px 0;">
+            {@html description[1]}
+        </div>
+        {/if}
     </div>
 </a>
 
 
 <style>
     .wrapper {
-        --nbr-of-small-projects: 4;
         --carousel-width: calc(100vw - calc(2 * var(--sides-padding)));
         --right-padding: 5px;
-        --right-padding-total: calc(var(--right-padding) * 4);
+        --right-padding-total: calc(var(--right-padding) * var(--nbr-of-small-projects));
         --width-left: calc(var(--carousel-width) - var(--right-padding-total));
-        --small-project-width: calc(var(--width-left) / 4);
+        --small-project-width: calc(var(--width-left) / var(--nbr-of-small-projects));
 
         color: white;
         text-decoration: none;
