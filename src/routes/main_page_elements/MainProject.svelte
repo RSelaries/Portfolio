@@ -3,11 +3,11 @@
     import { base } from "$app/paths"
     import { projects } from "$lib/projects.json"
 
-    let { image, imageAlt = "", projectName = "Project Name", projectType = "Project - Type", description, isGif } = $props()
+    let { image, imageAlt = "", projectName = "Project Name", projectType = "Project - Type", description, isGif, forceMain=false } = $props()
 </script>
 
 {#each projects as project}
-    {#if project.main}
+    {#if project.main || forceMain}
         <div class="main-project">
             <a class="img-button" href="{base}{project.path}">
                 <img class="filter-nearest" src="{base}{project.image}" alt="">

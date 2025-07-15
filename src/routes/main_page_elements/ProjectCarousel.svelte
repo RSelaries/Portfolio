@@ -17,22 +17,24 @@
 </script>
 
 
-<div class="wrapper" id="carousel">
-    <div class="project-carousel" id="project-carousel" style={`left: ${left}px`}>
-        {#each projects as project}
-            {#if (!project.main ||!isHomePage) && (currentPage != project.name)}
-            <SmallProject pathName={project.path} name={project.name} subtitle={project.subtitle} image="{base}{project.image}" style="margin-right: 5px;" {sidePadding} rightPadding={5} />
-            {/if}
-        {/each}
+<div>
+    <div class="wrapper" id="carousel">
+        <div class="project-carousel" id="project-carousel" style={`left: ${left}px`}>
+            {#each projects as project}
+                {#if (!project.main ||!isHomePage) && (currentPage != project.name)}
+                <SmallProject pathName={project.path} name={project.name} subtitle={project.subtitle} image="{base}{project.image}" style="margin-right: 5px;" {sidePadding} rightPadding={5} />
+                {/if}
+            {/each}
+        </div>
+        <div class="buttons-wrapper">
+            <button class="pan-button left" onclick={() => pan(1)}>&lt;</button>
+            <button class="pan-button right" onclick={() => pan(-1)}>&gt;</button>
+        </div>
     </div>
-    <div class="buttons-wrapper">
-        <button class="pan-button left" onclick={() => pan(1)}>&lt;</button>
-        <button class="pan-button right" onclick={() => pan(-1)}>&gt;</button>
+    <br>
+    <div class="projects-button-wrapper">
+        <StandardButton href={"/projets"}>Tous les projets</StandardButton>
     </div>
-</div>
-<br>
-<div class="projects-button-wrapper">
-    <StandardButton href={"/projets"}>Tous les projets</StandardButton>
 </div>
 
 

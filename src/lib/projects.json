@@ -29,7 +29,7 @@
         {
             "name": "Visualizer",
             "subtitle": "Vidéo - Premiere Pro",
-            "image": "/projects/assets/Visualizer1.gif",
+            "image": "/projects/assets/Visualizer1-crop.gif",
             "gif": "/projects/assets/visualizer-lossy.gif",
             "main": false,
             "path": "/projets/visualizer",
