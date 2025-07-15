@@ -36,24 +36,6 @@
             "description": "Visualizer (court vidéo clip qui boucle, designé pour les applications de musique comme Spotify ou Deezer) de la musique <i style=\"color: violet;\">Let it Happen</i> de l'album <i style=\"color: violet;\">Currents</i> de <i style=\"color: violet;\">Tame Impala</i>."
         },
         {
-            "name": "Auto-protraits photo",
-            "subtitle": "Photo",
-            "image": "/projects/assets/auto-portrait-golmon.jpg",
-            "gif": "/projects/assets/auto-portraits.gif",
-            "main": false,
-            "path": "/projets/auto-portraits",
-            "description": ""
-        },
-        {
-            "name": "Time Zones",
-            "subtitle": "Vidéo - After Effect",
-            "image": "/projects/assets/time-zones.gif",
-            "gif": "",
-            "main": false,
-            "path": "/projets/time-zones",
-            "description": ""
-        },
-        {
             "name": "Dénouement",
             "subtitle": "Montages photo",
             "image": "/projects/assets/denouement.png",
@@ -69,6 +51,24 @@
             "gif": "",
             "main": false,
             "path": "/projets/photos-lorine",
+            "description": ""
+        },
+        {
+            "name": "Time Zones",
+            "subtitle": "Vidéo - After Effect",
+            "image": "/projects/assets/time-zones.gif",
+            "gif": "",
+            "main": false,
+            "path": "/projets/time-zones",
+            "description": ""
+        },
+        {
+            "name": "Auto-protraits photo",
+            "subtitle": "Photo",
+            "image": "/projects/assets/auto-portrait-golmon.jpg",
+            "gif": "/projects/assets/auto-portraits.gif",
+            "main": false,
+            "path": "/projets/auto-portraits",
             "description": ""
         },
         {

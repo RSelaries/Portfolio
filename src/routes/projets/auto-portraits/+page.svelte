@@ -1,11 +1,12 @@
 <script>
     import ProjectCarousel from "../../main_page_elements/ProjectCarousel.svelte"
-    import Header from "../../main_page_elements/header.svelte"
+    import Header from "../../main_page_elements/Header.svelte"
 
     // Assets
-    import photo1 from "$lib/projects/visualizer/1.png"
-
-    import premiereVersion from "$lib/projects/visualizer/version1.mp4"
+    import photo1 from "$lib/projects/autoportraits/photo1.jpg"
+    import photo2 from "$lib/projects/autoportraits/photo2.jpg"
+    import photo3 from "$lib/projects/autoportraits/photo3.jpg"
+    import photo4 from "$lib/projects/autoportraits/photo4.png"
 </script>
 
 
@@ -19,10 +20,13 @@
 
     <div class="images-grid four">
         <img src={photo1} alt="">
+        <img src={photo2} alt="">
+        <img src={photo3} alt="">
+        <img src={photo4} alt="">
     </div>
-    
+
     <h2>Autres projets</h2>
-    <ProjectCarousel sidePadding={50} isHomePage={false} isGif={true} currentPage="Visualizer" />
+    <ProjectCarousel sidePadding={50} isHomePage={false} isGif={true} currentPage="Auto-protraits photo" />
 </main>
 
 

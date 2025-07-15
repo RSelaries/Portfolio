@@ -10,7 +10,7 @@
     // Assets
     import dreamscapeThumbnail from "$lib/assets/background.png"
     import ProjectCarousel from "./main_page_elements/ProjectCarousel.svelte"
-    import Header from "./main_page_elements/header.svelte"
+    import Header from "./main_page_elements/Header.svelte"
 
     let scroll = $state(0)
     let height = $state()
@@ -39,21 +39,21 @@
             <h1>À propos</h1>
             <br />
             <p>
-                Je suis étudiant en dernière année de
-                <a href="https://shorturl.at/sUWpE"> DNMADe Numérique</a> à
-                l’école ENSAAMA - Olivier de Serres. <br />
+                Je suis étudiant diplômé d'un
+                <a href="https://ensaama.net/site/home/formations/dnmade/numerique-expriences-narratives-et-interactives">
+                DNMADe Numérique</a> à l’école ENSAAMA - Olivier de Serres. <br />
                 <br />
                 Dans ma formation j’ai pu toucher au motion design, la modélisation
                 3D, de la photographie, vidéo ainsi que la programmation (ce site web
-                atant par ailleurs codé par moi-même avec la librairie svelte).
+                atant par ailleurs codé par moi-même avec la librairie <a href="https://svelte.dev/">svelte</a>).
                 <br />
-                J’ai également eu un formation sur les arts plastiques, majoritairement
-                du dessin mais aussi du modelage.
+                J’ai également eu une formation sur les arts plastiques, majoritairement
+                du dessin, mais aussi du modelage.
                 <br />
                 <br />
                 Je suis un amoureux des jeux vidéos indépendants qui, par leur esthétique
                 ou gameplay, amènent quelque chose en plus au medium. C'est pour
-                cela que j'apprend en ce moment le moteur de jeu Godot en auto-didacte.
+                cela que j'apprend en ce moment le moteur de jeu <a href="https://godotengine.org/">Godot</a> en auto-didacte.
             </p>
         </div>
     </div>
@@ -90,6 +90,16 @@
 
         p {
             text-align: justify;
+        }
+
+        a {
+            color: #9d00ff;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+
+            &:hover {
+                color: #a900e6;
+            }   
         }
     }
 </style>

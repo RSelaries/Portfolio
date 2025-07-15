@@ -1,6 +1,6 @@
 <script>
     import P5 from "p5-svelte"
-    import Header from "../../../main_page_elements/header.svelte"
+    import Header from "../../../main_page_elements/Header.svelte"
     import Parameters from "./Parameters.svelte"
 
     
