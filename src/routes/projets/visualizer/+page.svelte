@@ -1,6 +1,7 @@
 <script>
     import ProjectCarousel from "../../main_page_elements/ProjectCarousel.svelte"
     import Header from "../../main_page_elements/header.svelte"
+    import { base } from "$app/paths"
 
     // Assets
     import storyboard1 from "$lib/projects/visualizer/1.png"
@@ -62,7 +63,7 @@
                 <!-- <video src={premiereVersion} controls>
                     <track kind="captions" />
                 </video> -->
-                <video src="/projects/visualizer/version1.mp4" controls>
+                <video src="{base}/projects/visualizer/version1.mp4" controls>
                     <track kind="captions" />
                 </video>
             </div>
