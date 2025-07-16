@@ -60,7 +60,7 @@
         white-space: nowrap;
     }
 
-    button {
+    /* button {
         font-family: Movement;
         padding: 10px;
         font-size: 1.3rem;
@@ -73,6 +73,6 @@
         border: none;
         
         white-space: nowrap;
-    }
+    } */
 
 </style>

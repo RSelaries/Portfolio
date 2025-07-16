@@ -25,7 +25,7 @@
     import storyboard20 from "$lib/projects/visualizer/20.png"
     import storyboard21 from "$lib/projects/visualizer/21.png"
 
-    import premiereVersion from "$lib/projects/visualizer/version1.mp4"
+    // import premiereVersion from "$lib/projects/visualizer/version1.mp4"
 </script>
 
 
@@ -59,7 +59,10 @@
         <div>
             <h2>PremiÈre version</h2>
             <div style="display: flex; width: auto; justify-content: center; margin: 50px 0;">
-                <video src={premiereVersion} controls>
+                <!-- <video src={premiereVersion} controls>
+                    <track kind="captions" />
+                </video> -->
+                <video src="/projects/visualizer/version1.mp4" controls>
                     <track kind="captions" />
                 </video>
             </div>
