@@ -1,6 +1,6 @@
 <script>
     import ProjectCarousel from "../../main_page_elements/ProjectCarousel.svelte"
-    import Header from "../../main_page_elements/Header.svelte"
+    import Header from "../../main_page_elements/header.svelte"
 
     // Assets
     import photo1 from "$lib/projects/photos-lorine/001.jpg"

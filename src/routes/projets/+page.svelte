@@ -1,5 +1,5 @@
 <script>
-    import Header from "../main_page_elements/Header.svelte"
+    import Header from "../main_page_elements/header.svelte"
     import SmallProject from "../main_page_elements/SmallProject.svelte"
 
     import { projects } from "$lib/projects.json"

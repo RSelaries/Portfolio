@@ -10,7 +10,7 @@
     // Assets
     import dreamscapeThumbnail from "$lib/assets/background.png"
     import ProjectCarousel from "./main_page_elements/ProjectCarousel.svelte"
-    import Header from "./main_page_elements/Header.svelte"
+    import Header from "./main_page_elements/header.svelte"
 
     let scroll = $state(0)
     let height = $state()
