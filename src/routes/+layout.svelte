@@ -1,7 +1,8 @@
 <script>
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/favicon.svg'
+	import { base } from '$app/paths'
 
-	let { children } = $props();
+	let { children } = $props()
 </script>
 
 <svelte:head>
