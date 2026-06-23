@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Basteleur;
+    font-weight: 400;
+    src: url(/fonts/Basteleur-Moonlight.woff2);
+}
+@font-face {
+    font-family: Basteleur;
+    font-weight: 700;
+    src: url(/fonts/Basteleur-Bold.woff2);
+}
+
+@font-face {
+    font-family: Lineal;
+    src: url(/fonts/LinealVF.woff2);
+}
