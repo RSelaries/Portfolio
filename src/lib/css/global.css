@@ -5,10 +5,21 @@
 
 :root {
     --background-color: #1e1e1e;
+    --article-size: 700px;
+    scrollbar-gutter: stable;
 }
 
 body {
     width: 100vw;
 
     background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    font-family: Lineal;
+    color: white;
+}
+a:hover {
+    text-decoration: underline dashed;
 }

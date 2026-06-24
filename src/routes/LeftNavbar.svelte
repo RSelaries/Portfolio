@@ -1,27 +1,22 @@
 <script>
+    import NavbarLink from './NavbarLink.svelte'
     import { base } from '$app/paths'
     import { page } from '$app/state'
-
-    function isCurrent(path) {
-        return page.url.pathname === {base} + path ? 'current' : ''
-    }
-
-    $effect(() => console.log(base + page.url.pathname))
 </script>
 
 <div class="site-navbar">
     <nav class="home-nav">
-        <a href="{base}/" class="home-btn {page.url.pathname === {base} + '/' ? 'current' : ''}"><h1>Raphaël<br>Selaries</h1></a>
-        <a href="{base}/a-propos" class="{page.url.pathname === {base} + '/a-propos' ? 'current' : ''}">À propos & Contacts</a>
-        <a href="{base}/cv" class="{isCurrent('/cv')}">CV</a>
+        <a href="{base}/" class="home-btn"><h1>Raphaël<br>Selaries</h1></a>
+        <NavbarLink href="/a-propos">À propos & Contacts</NavbarLink>
+        <NavbarLink href="/cv">CV</NavbarLink>
     </nav>
 
     <nav class="dir-nav">
         <h2>Travaux</h2>
-        <a href="{base}/" class="{isCurrent('/')}">Projets</a>
-        <a href="{base}/" class="{isCurrent('/')}">Jeux Vidéo</a>
-        <a href="{base}/" class="{isCurrent('/')}">Photographies</a>
-        <a href="{base}/" class="{isCurrent('/')}">Art</a>
+        <NavbarLink href="/projets">Projets</NavbarLink>
+        <NavbarLink href="/jeux-video">Jeux Vidéo</NavbarLink>
+        <NavbarLink href="/photographie">Photographies</NavbarLink>
+        <NavbarLink href="/art">Art</NavbarLink>
     </nav>
 
     <nav class="links-nav">
@@ -53,7 +48,7 @@
     .home-nav {
         .home-btn {
             font-family: Basteleur;
-            font-size: 18px;
+            font-size: 19px;
             color: white;
         }
         .home-btn:hover {
@@ -75,13 +70,8 @@
         flex-direction: column;
         
         a {
-            text-decoration: none;
-            font-family: Lineal;
             color: #ccc;
             font-size: 18px;
-        }
-        a:hover {
-            text-decoration: underline dashed;
         }
         a::before {
             content: "-";

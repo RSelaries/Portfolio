@@ -31,6 +31,8 @@
 	}
 
 	section.page-content {
+		width: 100%;
+		/* max-width: 800px; */
 		font-family: Lineal;
 	}
 </style>
