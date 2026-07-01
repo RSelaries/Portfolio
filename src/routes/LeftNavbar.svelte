@@ -42,7 +42,9 @@
         justify-content: space-between;
         height: calc(100vh - calc(var(--vertical-padding-amount) * 2));
         padding: var(--vertical-padding-amount) var(--horizontal-padding-amount);
-        width: fit-content;
+        /* width: fit-content; */
+        flex: 1;
+        max-width: 250px;
     }
 
     .home-nav {
@@ -50,9 +52,6 @@
             font-family: Basteleur;
             font-size: 19px;
             color: white;
-        }
-        .home-btn:hover {
-            text-decoration: none;
         }
         .home-btn::before {
             display: none;

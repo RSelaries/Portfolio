@@ -6,6 +6,7 @@
 :root {
     --background-color: #1e1e1e;
     --article-size: 700px;
+    --page-size: 1000px;
     scrollbar-gutter: stable;
 }
 
@@ -22,4 +23,8 @@ a {
 }
 a:hover {
     text-decoration: underline dashed;
+}
+
+h1 {
+    font-family: Basteleur;
 }

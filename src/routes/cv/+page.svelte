@@ -12,11 +12,9 @@
     <ArticlePage>
         <div class="section-wrapper">
             <div class="line" style="opacity: 0;"></div>
-            <div>
-                <a href="{base}/cv.pdf" download="raphael-selaries-cv.pdf">
-                    <h2>Télécharger CV en PDF.</h2>
-                </a>
-            </div>
+            <a href="{base}/cv.pdf" download="raphael-selaries-cv.pdf">
+                <h2>Télécharger CV en PDF.</h2>
+            </a>
         </div>
         
         <h1>Expériences</h1>
